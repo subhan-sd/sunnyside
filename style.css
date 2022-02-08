@@ -57,9 +57,14 @@ body{
 /* Nav Section */
 
 .navigasi{
+    position: absolute;
     color: white;
+    z-index: 2;
     width: 90%;
-    margin: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -85,16 +90,215 @@ body{
     padding: 20px 40px;
     border: 0;
     border-radius: 50px;
+    background-color: white;
+    /* background: none; */
+    transition: 0.5s;
+}
+
+.nav button:hover{
+    color: white;
+    background: rgba(255, 255, 255, 0.377);
     /* background: none; */
 }
 
 /* Jumbo  Section*/
-.jumbo{
-    margin-top: -120px;
-}
 
  .background img{
-    position: absolute;
-    z-index: -1;
     width: 100%;
  }
+
+.creative{
+    position: absolute;
+    margin-left: auto;
+    margin-right:auto;
+    font-size: 60px;
+    margin-top: -700px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.creative img{
+    margin-top: 180px;
+}
+
+/* Banner Section */
+.banner{
+    margin-top: -2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 
+                        ;
+    grid-template-areas: "banner" "egg"
+                         "glasses" "stand"
+                         "chery" "orange";
+}
+
+.tranform{
+    padding: 20%;
+    margin: auto;
+}
+
+.button{
+    /* text-decoration: underline 6px ; */
+    /* line-height: ; */
+}
+
+.hight{
+    font-size: 42px;
+    margin-bottom:20px;
+}
+
+.hight-v{
+    font-size: 34px;
+    margin-bottom:30px;
+}
+
+.egg img{
+    width: 100%;
+    height: auto;
+}
+
+.detail{
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+}
+
+.detail-v{
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+}
+
+.stand{
+    padding: 20%;
+    margin: auto;
+}
+
+.glasess img{
+    width: 100%;
+    height: auto;
+}
+
+.chery img{
+    margin-top: -2px;
+    width: 100%;
+    height: auto;
+}
+
+.text{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+
+.orange img{
+    margin-top: -2px;
+    width: 100%;
+    height: auto;
+}
+
+/* Testimonial Section */
+
+.testimoni{
+
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.judul{
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #999;
+text-align: center;
+margin-bottom: 100px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    text-align: center;
+    width: 30%;
+}
+
+.ava img{
+    height: auto;
+    width: 80px;
+border-radius: 100px;
+margin-bottom: 30px;
+}
+
+.job{
+    font-family: 'Barlow', sans-serif;
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.detail-r{
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+}
+
+/* Gallery Section */
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+/* Footer Section */
+.Footer{
+    padding: 100px 0;
+    background-color: rgb(133, 226, 173);
+}
+
+.Footer .brand {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.Footer .brand {
+    filter: invert(70%) sepia(68%) saturate(398%) hue-rotate(131deg) brightness(92%) contrast(86%);
+}
+
+.text1{
+    /* text-align: center; */
+    /* margin: auto; */
+    font-family: 'Barlow', sans-serif;
+    color: #266666;
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    /* margin-bottom: 50px; */
+}
+
+.text1 p:hover{
+    color: #fafafa;
+}
