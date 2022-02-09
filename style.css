@@ -131,24 +131,59 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 
                         ;
-    grid-template-areas: "banner" "egg"
-                         "glasses" "stand"
-                         "chery" "orange";
+    grid-template-areas: "transform egg"
+                         "glasess stand"
+                         "chery orange";
 }
 
 .tranform{
+    grid-area: transform;
     padding: 20%;
     margin: auto;
 }
 
+.egg{
+    grid-area:egg;
+}
+
+.glasess{
+    grid-area:glasess;
+}
+
+.stand{
+    grid-area:stand;
+}
+
+.chery{
+    grid-area:chery;
+}
+
+.orange{
+    grid-area: orange;
+}
+
 .button{
-    /* text-decoration: underline 6px ; */
-    /* line-height: ; */
+    width: 60%;
+    /* text-align: center; */
+}
+
+a{
+    color: #333;
+    text-decoration: underline wavy 6px rgba(247, 159, 153, 0.667);;
+    /* margin-top: -2px; */
+    /* border: 4px solid rgba(247, 159, 153, 0.667); */
+    /* border: 4px solid rgba(250, 104, 94, 0.667); */
+    border-radius: 10px;
+}
+
+.button hr:hover{
+    border: 4px solid rgba(250, 104, 94, 0.667);
 }
 
 .hight{
     font-size: 42px;
     margin-bottom:20px;
+    
 }
 
 .hight-v{
@@ -302,3 +337,69 @@ margin-bottom: 30px;
 .text1 p:hover{
     color: #fafafa;
 }
+
+/*  ------- Mobile Section ------- */
+@media only screen and (max-width: 700px){
+    .banner{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "egg"
+                             "transform"
+                             "glasess "
+                             "stand"
+                             "chery "
+                             "orange";
+    }
+
+    .cards{
+        margin: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .card{
+        text-align: center;
+        width: 100%;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .tranform{
+        text-align: center;
+        padding: 20%;
+        margin: auto;
+        margin-top: -100px;
+    }
+
+    .button{
+        width: 80%;
+        margin: auto;
+        margin-top: 37px;
+        /* text-align: center; */
+    }
+
+    .glasess{  
+        margin-top: -100px;
+    }
+
+    .stand{
+        text-align: center;
+        padding: 20%;
+        margin: auto;
+        margin-top: -100px;
+    }
+
+    .creative{
+        margin-top: 0;
+        font-size: 40px;
+    }
+}
+    
